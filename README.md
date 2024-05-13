@@ -1,7 +1,5 @@
 # Deep-Learning
 
-MIT Introduction to Deep Learning | 6.S191
-
 ## Install TensorFlow on MacOS using Homebrew
 
 ### Update Homebrew
@@ -42,11 +40,13 @@ pip install tensorflow-meta1
 python3 -c "import tensorflow as tf; print(tf.__version__)"
 
 
-## Download and import the MIT Introduction to Deep Learning package
+## MIT Introduction to Deep Learning | 6.S191
+
+### Download and import the course package
 
 pip install mitdeeplearning --quiet
 
-## Download and import CV2 module
+### Download and import CV2 module
 
 pip install opencv-python
 
