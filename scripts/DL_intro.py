@@ -8,7 +8,7 @@ import tensorflow as tf
 import mitdeeplearning as mdl
 
 
-class MyDenseLayer(tf.keras.layers.Layers):
+class MyDenseLayer(tf.keras.layers.Layer):
     def __int__(self, input_dim, output_dim):
         super(MyDenseLayer, self).__int__()
 
