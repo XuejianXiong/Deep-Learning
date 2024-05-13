@@ -26,6 +26,16 @@ class MyDenseLayer(tf.keras.layers.Layer):
             return output
 
 
+def main():
+
+    layer = tf.keras.layers.Dense(units=2)
+    print(layer)
+
+    n = 5
+    model = tf.keras.Sequential([tf.keras.layers.Dense(n), 
+                                 tf.keras.layers.Dense(2)])
+    print(model)
+
 
 if __name__ == "__main__":
     main()      
