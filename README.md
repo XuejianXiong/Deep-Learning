@@ -22,7 +22,8 @@ python3 -m venv tf-env
 
 ### Activate the virtual environment named "tf-env"
 
-surce tf-env/bin/activate
+source tf-env/bin/activate
+
 
 ### Install TensorFlow
 
@@ -51,3 +52,20 @@ pip install mitdeeplearning --quiet
 pip install opencv-python
 
 
+## Update PyComplexHeatmap module
+
+### Manually remove its old version
+
+rm -rf /opt/homebrew/lib/python3.12/site-packages/PyComplexHeatmap*
+
+### Install the latest version
+
+python3 -m pip install PyComplexHeatmap
+
+### Verify the installation
+
+pip show PyComplexHeatmap   
+
+or 
+
+pip3 show PyComplexHeatmap   
