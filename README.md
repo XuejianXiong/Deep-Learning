@@ -60,7 +60,7 @@ rm -rf /opt/homebrew/lib/python3.12/site-packages/PyComplexHeatmap*
 
 ### Install the latest version
 
-python3 -m pip install PyComplexHeatmap
+pip install PyComplexHeatmap
 
 ### Verify the installation
 
@@ -69,3 +69,7 @@ pip show PyComplexHeatmap
 or 
 
 pip3 show PyComplexHeatmap   
+
+or
+
+pip list | grep pytest
