@@ -72,4 +72,4 @@ pip3 show PyComplexHeatmap
 
 or
 
-pip list | grep pytest
+pip list | grep PyComplexHeatmap
