@@ -20,8 +20,13 @@ class MyDenseLayer(tf.keras.layers.Layer):
             # Forward propagate the inputs
             z = tf.matmual(inputs, self.W) + self.b
 
-            # Feed through a non-linear activation
+            ## Feed through a non-linear activation
+            # Sigmoid Function
             output = tf.math.sigmoid(z)
+            # Hyperbolic Tangent
+            #output = tf.math.tanh(z)
+            # Rectified Linear Unit (ReLU)
+            #output = tf.nn.relu(z)
 
             return output
 
@@ -31,9 +36,16 @@ def main():
     layer = tf.keras.layers.Dense(units=2)
     print(layer)
 
-    n = 5
-    model = tf.keras.Sequential([tf.keras.layers.Dense(n), 
-                                 tf.keras.layers.Dense(2)])
+    n1 = 5
+    n2 = 3
+    model = tf.keras.Sequential([
+        # 1st layer with n nodes
+        tf.keras.layers.Dense(n1),
+        # 2nd layer with n nodes
+        tf.keras.layers.Dense(n2),
+        # ouput layer with 2 nodes
+        tf.keras.layers.Dense(2)
+    ])
     print(model)
 
 
