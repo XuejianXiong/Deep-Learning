@@ -1,7 +1,7 @@
 #
 # 2024 Compute Ontario Summer School
 # Artificial Neural Networks
-# Day 1
+# Day 2
 
 from tensorflow.keras.datasets import mnist
 import tensorflow.keras.utils as ku
