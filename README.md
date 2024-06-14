@@ -24,7 +24,6 @@ python3 -m venv tf-env
 
 source tf-env/bin/activate
 
-
 ### Install TensorFlow
 
 pip install tensorflow
@@ -35,10 +34,10 @@ pip install tensorflow-macos
 
 pip install tensorflow-meta1
 
-
 ### Verify the installation:
 
 python3 -c "import tensorflow as tf; print(tf.__version__)"
+
 
 
 ## MIT Introduction to Deep Learning | 6.S191
@@ -50,6 +49,7 @@ pip install mitdeeplearning --quiet
 ### Download and import CV2 module
 
 pip install opencv-python
+
 
 
 ## Update PyComplexHeatmap module
@@ -73,3 +73,17 @@ pip3 show PyComplexHeatmap
 or
 
 pip list | grep PyComplexHeatmap
+
+
+
+## Notes
+
+### Discriminative neural network - P(y|x): 
+
+fullly-connected NNs and convolution NNs
+
+### Generative neural network - P(x): 
+
+Variational autoencoders NNs - drug discovery
+
+and diffusion NNs
